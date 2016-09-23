@@ -1,8 +1,8 @@
 # CocoaPods
-podfile
 Pods
 *.xcuserdatad
 .svn
+.DS_Store
 
 ## Build generated
 build/

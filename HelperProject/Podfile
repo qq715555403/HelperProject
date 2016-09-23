@@ -1,0 +1,19 @@
+platform :ios, '7.0'
+pod "AFNetworking", "~> 2.0"
+pod 'FMDB'
+pod 'MBProgressHUD’
+pod 'SVProgressHUD'
+pod 'SDWebImage’
+pod 'RegexKitLite’
+pod 'Masonry’
+pod 'WebViewJavascriptBridge’
+pod 'YISplashScreen'
+pod 'PKRevealController'
+pod 'Appirater'
+pod 'MTStatusBarOverlay'
+pod 'SIAlertView'
+pod 'HCSStarRatingView', :git => 'https://github.com/hugocampossousa/HCSStarRatingView.git'   #评分星星
+
+pod 'RETableViewManager', '~> 1.6'  #快速创建表单
+pod 'UzysAssetsPickerController'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。
+pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
