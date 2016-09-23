@@ -1,0 +1,5 @@
+podfile
+Pods
+Podfile.lock
+*.xcuserdatad
+.svn

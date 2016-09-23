@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nci-l5-GK1">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="查看电池信息">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="lookBatteryInfo:" destination="-1" eventType="touchUpInside" id="Vc3-oE-D16"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1Y-o3-Sgo">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="查看设备信息">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="lookDeviceInfo:" destination="-1" eventType="touchUpInside" id="BnP-4e-8Nu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P1Y-o3-Sgo" firstAttribute="leading" secondItem="nci-l5-GK1" secondAttribute="leading" id="Ca6-WK-HVd"/>
+                <constraint firstItem="P1Y-o3-Sgo" firstAttribute="top" secondItem="nci-l5-GK1" secondAttribute="bottom" constant="8" id="Sby-pc-C4m"/>
+                <constraint firstItem="nci-l5-GK1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="Tri-bu-Qox"/>
+                <constraint firstItem="nci-l5-GK1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="otx-KF-pYU"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="nci-l5-GK1"/>
+                    <exclude reference="P1Y-o3-Sgo"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Tri-bu-Qox"/>
+                    <exclude reference="otx-KF-pYU"/>
+                    <exclude reference="Ca6-WK-HVd"/>
+                    <exclude reference="Sby-pc-C4m"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="nci-l5-GK1"/>
+                    <include reference="P1Y-o3-Sgo"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Tri-bu-Qox"/>
+                    <include reference="otx-KF-pYU"/>
+                    <include reference="Ca6-WK-HVd"/>
+                    <include reference="Sby-pc-C4m"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
